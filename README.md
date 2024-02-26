@@ -1,2 +1,2 @@
 # Rajongoi9A-A
-projekt
+Ez a projekt egy rajongói oldal Lewis Hamilton számára.
