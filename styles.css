@@ -32,4 +32,21 @@ p {
 
 b {
     color: darkturquoise;
+
+.kek {
+    color: #016b78;
+}
+
+.text-info {
+    color: #016b78 !important;
+}
+
+.nav-item {
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.nav-item:hover {
+    background-color: #00a6a6;
 }
