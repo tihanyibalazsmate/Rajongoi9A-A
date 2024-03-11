@@ -15,7 +15,11 @@
 }
 
 body {
-    background-image: url(kepek/_132724902_gettyimages-2025146131.jpg);
+    background-image: url(kepek/hatterszurke.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+p {
+    color: #d2d6d2;
 }
