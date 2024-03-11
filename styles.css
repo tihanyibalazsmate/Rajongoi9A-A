@@ -2,6 +2,8 @@
     text-align: center;
     font-weight: bold;
     font-size: 50px;
+    margin: 8px auto;
+    padding: 10px;
 }
 
 .nev {
@@ -26,4 +28,8 @@ p {
 
 .bg-primary {
     background-color: #016b78!important;
+}
+
+b {
+    color: darkturquoise;
 }
