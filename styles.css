@@ -23,3 +23,7 @@ body {
 p {
     color: #d2d6d2;
 }
+
+.bg-primary {
+    background-color: #016b78!important;
+}
