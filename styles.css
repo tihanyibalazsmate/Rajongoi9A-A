@@ -2,6 +2,8 @@
     text-align: center;
     font-weight: bold;
     font-size: 50px;
+    margin: 8px auto;
+    padding: 10px;
 }
 
 .nev {
@@ -28,6 +30,9 @@ p {
     background-color: #016b78!important;
 }
 
+b {
+    color: darkturquoise;
+
 .kek {
     color: #016b78;
 }
@@ -44,8 +49,4 @@ p {
 
 .nav-item:hover {
     background-color: #00a6a6;
-}
-
-.igazitas {
-    align-items: center;
 }
