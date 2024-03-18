@@ -4,24 +4,18 @@
     font-size: 50px;
     margin: 8px auto;
     padding: 10px;
+    color: white;
 }
 
 .nev {
     font-size: 25px;
 }
 
-.kep   {
-    width: 300px;
-    margin: 50px auto;
-    border: 4px black solid;
-}
-
 body {
-    background-color: #f6fcf9;
-}
-
-.bg-primary {
-    background-color: #008080!important;
+    background-image: url(kepek/hatter.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 b {
@@ -54,4 +48,23 @@ b {
 .közep-szöveg {
     margin: 0px 120px;
     text-align: justify; 
+}
+
+p { 
+    color: white;
+}
+
+.card {
+   width: 300px;
+    height: 660px;
+    margin: 0px auto;
+    border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(2, 233, 250, 0.2) 0 15px 30px -5px;
+  border: 3px solid #008080;
+  background: rgb(5, 6, 45);
+}
+
+.card-title {
+    color: #f6fcf9;
 }
