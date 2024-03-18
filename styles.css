@@ -17,9 +17,7 @@
 }
 
 body {
-    background-image: url(kepek/hatterszurke.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f6fcf9;
 }
 
 p {
@@ -27,27 +25,32 @@ p {
 }
 
 .bg-primary {
-    background-color: #016b78!important;
+    background-color: #008080!important;
 }
 
 b {
-    color: darkturquoise;
+    color: #008080;
 }
 
 .kek {
-    color: #016b78;
+    color: #008080;
 }
 
 .text-info {
-    color: #016b78 !important;
+    color: #008080 !important;
 }
 
 .nav-item {
     margin: 0px 10px;
     padding: 5px;
     border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 0 black;
 }
 
 .nav-item:hover {
-    background-color: #00a6a6;
+    background-color: #f6fcf9;
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
 }
