@@ -46,7 +46,7 @@ b {
 }
 
 .közep-szöveg {
-    margin: 0px 120px;
+    margin: 10px 30px;
     text-align: justify; 
 }
 
@@ -67,4 +67,10 @@ p {
 
 .card-title {
     color: #f6fcf9;
+}
+
+.keret  {
+    background-color: #353433;
+    margin: 0px 120px;
+    border-radius: 20px;
 }
