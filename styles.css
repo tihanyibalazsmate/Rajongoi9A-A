@@ -46,10 +46,8 @@ b {
 }
 
 .közep-szöveg {
-    margin: 0px 120px;
     text-align: center;
     margin: 10px 30px;
-    text-align: justify; 
 }
 
 p { 
@@ -112,6 +110,7 @@ p {
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
+}
 
 .keret  {
     background-color: #353433;
