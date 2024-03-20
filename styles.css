@@ -3,7 +3,7 @@
     font-weight: bold;
     font-size: 50px;
     margin: 8px auto;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     color: white;
 }
 
@@ -28,6 +28,11 @@ b {
 
 .text-info {
     color: #008080 !important;
+}
+
+.navbar {
+    background-color: #ffffff00;
+    z-index: 1;   
 }
 
 .nav-item {
@@ -113,7 +118,25 @@ p {
 }
 
 .keret  {
-    background-color: #353433;
+    background-color: #ffffff00;
     margin: 0px 120px;
     border-radius: 20px;
+}
+
+.carousel-magassag {
+    height: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.sticky {
+    background-color: #353433;
+}
+
+.mg-top {
+    margin-top: 40px;
+}
+
+.alulra {
+    clear: both;
 }
