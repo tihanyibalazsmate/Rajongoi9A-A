@@ -17,6 +17,9 @@ body {
     background-size: cover;
     height: 100vh;
 }
+.quiz-body {
+    color: #fff;
+}
 
 b {
     color: #008080;
@@ -72,6 +75,20 @@ p {
 
 .card-title {
     color: #f6fcf9;
+}
+
+.main {
+    min-height: 100vh;
+    background: url(kepek/hatter.jpg);
+    background-size: cover;
+    background-position: center;
+    pointer-events: auto;
+    transition: .3s ease;
+}
+
+.main.active {
+    filter: blur(15px);
+    pointer-events: none;
 }
 
 .home {
