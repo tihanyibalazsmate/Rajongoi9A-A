@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var last_scroll_top2 = 0;
         window.addEventListener('scroll', function () {
             let scroll_top2 = window.scrollY;
-            if (scroll_top2 > last_scroll_top2 && scroll_top2 > 500) {
+            if (scroll_top2 > last_scroll_top2 && scroll_top2 > 1000) {
 
                 el_autohide_footer.classList.remove('scrolled-up');
                 el_autohide_footer.classList.add('scrolled-down');
