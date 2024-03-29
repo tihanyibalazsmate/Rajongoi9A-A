@@ -9,7 +9,7 @@
 }
 
 .evszam{
-    margin-left: 40px;
+    margin-left: 120px;
     color: #f6fcf9;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
@@ -518,4 +518,19 @@ ul{
 .scrolled-up {
     transform: translateY(0);
     transition: all 0.3s ease-in-out;
+}
+
+/*képek magassága az index oldalra*/
+.kepmagassag {
+    height: 150px;
+    margin-right: 50px;
+}
+
+.box h2 {
+    writing-mode: vertical-lr;
+    color: #f6fcf9;
+    padding-top: 190px;
+    text-align: center;
+    padding-left: 70px;
+    font-family: Hand;
 }
