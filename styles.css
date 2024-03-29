@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 .cim {
     text-align: center;
     font-weight: bold;
     font-size: 50px;
-    margin: 8px auto;
+    margin: 8px ;
     padding: 0px 10px 10px 10px;
     color: white;
+}
+
+.evszam{
+    margin-left: 40px;
+    color: #f6fcf9;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 70px;
 }
 
 .nev {
@@ -16,6 +25,9 @@ body {
     background-position: center;
     background-size: cover;
     height: 100vh;
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 .quiz-body {
     color: #fff;
@@ -55,12 +67,14 @@ b {
 }
 
 .közep-szöveg {
-    text-align: center;
-    margin: 10px 30px;
+    margin: 0px 40px;
+    margin-bottom: 60px;
+    line-height: 1.5;
 }
 
 p { 
     color: white;
+    padding: 10px;
 }
 
 .card {
@@ -354,13 +368,16 @@ p {
 }
 
 .carousel-magassag {
-    height: 800px;
+    min-height: 400px;
+    max-height: 1000px;
     margin: 50px auto;
     padding: 20px;
 }
 
-.sticky {
-    background-color: #353433;
+.keret {
+    border: 3px solid #008080;
+    border-radius: 5px;
+    box-shadow: rgba(2, 233, 250, 0.2) 0 15px 30px -5px;
 }
 
 .mg-top {
@@ -370,3 +387,113 @@ p {
 .alulra {
     clear: both;
 }
+  
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #222222;
+    padding: 70px 0;
+    margin-top: 60px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #008080;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*reszponzív*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.img-keret {
+    --b: 8px;  
+    --s: 60px; 
+    --g: 14px; 
+    --c: #008080; 
+  
+    padding: calc(var(--b) + var(--g));
+    background-image:
+      conic-gradient(from  90deg at top    var(--b) left  var(--b), #0000 25%, var(--c) 0),
+      conic-gradient(from -90deg at bottom var(--b) right var(--b), #0000 25%, var(--c) 0);
+    background-position:
+      var(--_p, 0%) var(--_p, 0%),
+      calc(100% - var(--_p, 0%)) calc(100% - var(--_p, 0%));
+    background-size: var(--s) var(--s);
+    background-repeat: no-repeat;
+    transition: 
+      background-position .3s var(--_i,.3s), 
+      background-size .3s calc(.3s - var(--_i, .3s));
+  }
+  .img-keret:hover {
+    background-size: calc(100% - var(--g)) calc(100% - var(--g));
+    --_p: calc(var(--g) / 2);
+    --_i: 0s;
+  }
