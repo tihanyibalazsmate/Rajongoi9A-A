@@ -115,7 +115,7 @@ p {
 
 .home {
     position: relative;
-    left: -50%;
+    left: -25%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -241,20 +241,21 @@ p {
 
 .quiz-section {
     position: relative;
-    left: -50%;
+    left: -100%;
     /* left: 0; */
     width: 100%;
-    background: #001d1d;
+    background: #070707fd;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .8s ease-in-out;
     transition-delay: .25s;
     z-index: 100;
+    border-radius: 25px;
 }
 
 .quiz-section.active {
-    left: 0;
+    left: 25%;
 }
 
 .quiz-section .quiz-box {
@@ -324,8 +325,24 @@ p {
 }
 
 .option-list .option:hover {
-    background: rgba(255, 255, 255, .1);
+    background: rgba(0, 50, 63, 0.397);
     border-color: rgba(255, 255, 255, .1);
+}
+
+.option-list .option.correct {
+    background: #09001d;
+    color: #00a63d;
+    border-color: #00a63d;
+}
+
+.option-list .option.incorrect{
+    background: #09001d;
+    color: #a60045;
+    border-color: #a60045;
+}
+
+.option-list .option.disabled{
+    pointer-events: none;
 }
 
 .quiz-box .quiz-footer {
@@ -353,11 +370,18 @@ p {
     color: rgba(255, 255, 255, .3);
     font-weight: 600;
     cursor: pointer;
-    /* pointer-events: none; */
+    pointer-events: none;
     transition: .5s;
 }
 
-.quiz-footer .next-btn:hover {
+.quiz-footer .next-btn.active{
+    pointer-events: auto;
+    background: #008080;
+    border-color: #008080;
+    color: #fff;
+}
+
+.quiz-footer .next-btn.active:hover {
     background: #005c5c;
     border-color: #005c5c;
 }
@@ -533,4 +557,17 @@ ul{
     text-align: center;
     padding-left: 70px;
     font-family: Hand;
+}
+
+.carousel-caption h3 {
+    background-color: #000000;
+    border-radius: 9px;
+    box-shadow: rgba(2, 233, 250, 0.2) 0 15px 30px -5px;
+}
+
+.carousel-caption p {
+    background-color: #008080;
+    border-radius: 9px;
+    box-shadow: rgba(2, 233, 250, 0.2) 0 15px 30px -5px;
+    font-size: 20px;
 }
