@@ -23,15 +23,29 @@ continueBtn.onclick = () => {
     quizBox.classList.add('active');
 
     showQuestions(0);
+    questionCounter(1); 
+    headerScore();
 }
 
 let questionCount = 0;
+let questionNumb = 1;
+let userScore = 0;
 
 const nextBtn = document.querySelector('.next-btn');
 
 nextBtn.onclick = () => {
-    questionCount++;
-    showQuestions(questionCount);
+    if (questionCount < questions.length - 1) {
+        questionCount++;
+        showQuestions(questionCount);
+
+        questionNumb++;
+        questionCounter(questionNumb);
+
+        nextBtn.classList.remove('active')
+    }
+    else {
+        console.log('Question Completed')
+    }
 }
 
 const optionList = document.querySelector('.option-list')
@@ -47,4 +61,48 @@ function showQuestions(index) {
     <div class="option"><span>${questions[index].options[3]}</span></div>`;
 
     optionList.innerHTML = optionTag;
+
+    const option = document.querySelectorAll('.option');
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute('onclick', 'optionSelected(this)');
+    }
+} 
+
+function optionSelected(answer){
+    let userAnswer = answer.textContent;
+    let correctAnswer = questions[questionCount].answer;
+    let allOptions = optionList.children.length;
+
+    if (userAnswer == correctAnswer) {
+        answer.classList.add('correct');
+        userScore += 1;
+        headerScore();
+    }
+    else {
+        answer.classList.add('incorrect')
+
+        //if answer incorrect, auto selected correct answer
+        for (let i = 0; i < allOptions; i++) {
+            if (optionList.children[i].textContent == correctAnswer){
+                optionList.children[i].setAttribute('class', 'option correct');
+            }
+        }
+    }
+
+    //if user selected, disable all options
+    for (let i = 0; i < allOptions; i++) {
+        optionList.children[i].classList.add('disabled');
+    }
+
+    nextBtn.classList.add('active');
+}
+
+function questionCounter(index) {
+    const questionTotal = document.querySelector('.question-total');
+    questionTotal.textContent = `${index} of ${questions.length} Questions`
+}
+
+function headerScore() {
+    const headerScoreText = document.querySelector('.header-score');
+    headerScoreText.textContent = `Score: ${userScore} / ${questions.length}`
 }
