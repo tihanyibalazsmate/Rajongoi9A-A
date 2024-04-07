@@ -29,6 +29,7 @@ body {
 	font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin-bottom: 338px;
+    width: 100%;
 }
 .quiz-body {
     color: #fff;
@@ -673,4 +674,27 @@ ul{
     border-radius: 9px;
     box-shadow: rgba(2, 233, 250, 0.2) 0 15px 30px -5px;
     font-size: 20px;
+}
+
+.kepek  {
+    height: 150px;
+    float: left;
+    padding: 10px;
+}
+
+.kepekjobb  {
+    height: 150px;
+    float: right;
+    padding: 10px;
+}
+
+.kepekfekvo  {
+    height: 200px;
+    float: left;
+    padding: 10px;
+}
+
+.ize {
+    text-align: center;
+    margin: 20px;
 }
