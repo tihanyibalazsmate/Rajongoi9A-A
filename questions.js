@@ -49,7 +49,7 @@ let questions = [
         answer: "D. 2013",
         options: [
             "A. 2010",
-            "B.2011",
+            "B. 2011",
             "C. 2012",
             "D. 2013"
         ]
