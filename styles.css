@@ -112,6 +112,7 @@ p {
     display: flex;
     height: 100vh;
     width: 200%;
+    overflow: hidden;
 }
 
 .home {
@@ -492,8 +493,9 @@ p {
 
 .keret  {
     background-color: #ffffff00;
-    margin: 0px 120px;
+    margin: 0px 20px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .carousel-magassag {
@@ -530,13 +532,14 @@ ul{
 }
 .footer{
 	background-color: #222222;
-    padding: 70px 0;
-    margin-top: 60px;
-    height: 338px;
+     padding: 70px 0; 
+     margin-top: 60px; 
+     height: 338px; 
 }
 .footer-col{
-   width: 25%;
-   padding: 0 105px;
+    
+   padding: 0px 105px;
+   background-color: #222222;
 
 }
 .footer-col h4{
@@ -545,18 +548,16 @@ ul{
 	text-transform: capitalize;
 	margin-bottom: 35px;
 	font-weight: 500;
-	position: relative;
 }
-.footer-col h4::before{
+ .footer-col h4::before{
 	content: '';
-	position: absolute;
 	left:0;
 	bottom: -10px;
 	background-color: #008080;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
-}
+} 
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
@@ -567,7 +568,6 @@ ul{
 	text-decoration: none;
 	font-weight: 300;
 	color: #bbbbbb;
-	display: block;
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
@@ -575,7 +575,7 @@ ul{
 	padding-left: 8px;
 }
 .footer-col .social-links a{
-	display: inline-block;
+	display: inline-block; 
 	height: 40px;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
@@ -594,13 +594,7 @@ ul{
 /*reszponzív*/
 @media(max-width: 767px){
   .footer-col{
-    width: 50%;
     margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
 }
 }
 
@@ -657,10 +651,12 @@ ul{
 .box h2 {
     writing-mode: vertical-lr;
     color: #f6fcf9;
-    padding-top: 190px;
+    padding-top: 100px;
     text-align: center;
     padding-left: 70px;
     font-family: Hand;
+    overflow: hidden;
+    pointer-events: none;
 }
 
 .carousel-caption h3 {
@@ -677,19 +673,19 @@ ul{
 }
 
 .kepek  {
-    height: 150px;
     float: left;
     padding: 10px;
+    height: 180px;
 }
 
 .kepekjobb  {
-    height: 150px;
+    height: 190px;
     float: right;
     padding: 10px;
 }
 
 .kepekfekvo  {
-    height: 200px;
+    height: 180px;
     float: left;
     padding: 10px;
 }
@@ -697,4 +693,17 @@ ul{
 .ize {
     text-align: center;
     margin: 20px;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+i {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.logo {
+    pointer-events: none;
 }
