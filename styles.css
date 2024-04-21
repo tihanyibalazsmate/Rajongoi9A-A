@@ -707,3 +707,19 @@ i {
 .logo {
     pointer-events: none;
 }
+
+/*reszponziv proba*/
+@media screen and (max-width: 600px) {
+    .quiz-section{
+        left: -150%;
+    }
+
+    .respo {
+        width: 600px ;
+        zoom: 80%;
+    }
+
+    .home-content p {
+        left: -150%;
+    }
+}
